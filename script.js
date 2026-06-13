@@ -218,3 +218,56 @@ if(copiarBtn){
     });
 
 }
+
+const transferModal =
+document.getElementById("transferModal");
+
+const openTransferModal =
+document.getElementById("openTransferModal");
+
+const closeTransfer =
+document.querySelector(".close-transfer");
+
+openTransferModal.addEventListener("click", () => {
+
+    transferModal.style.display = "flex";
+
+});
+
+closeTransfer.addEventListener("click", () => {
+
+    transferModal.style.display = "none";
+
+});
+
+window.addEventListener("click", (e) => {
+
+    if(e.target === transferModal){
+
+        transferModal.style.display = "none";
+
+    }
+
+});
+
+document
+.getElementById("copiarAliasBtn")
+.addEventListener("click", () => {
+
+    navigator.clipboard.writeText(
+        document.getElementById("aliasTexto").innerText
+    );
+
+    alert("Alias copiado");
+});
+
+document
+.getElementById("copiarCbuBtn")
+.addEventListener("click", () => {
+
+    navigator.clipboard.writeText(
+        document.getElementById("cbuTexto").innerText
+    );
+
+    alert("CBU copiado");
+});
