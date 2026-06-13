@@ -240,7 +240,8 @@ document
         document.getElementById("aliasTexto").innerText
     );
 
-    alert("Alias copiado");
+    mostrarMensaje("✓ Alias copiado");
+
 });
 
 document
@@ -251,5 +252,6 @@ document
         document.getElementById("cbuTexto").innerText
     );
 
-    alert("CBU copiado");
+    mostrarMensaje("✓ CBU copiado");
+
 });
