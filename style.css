@@ -1438,3 +1438,77 @@ h1{
 
     color: white;
 }
+
+.modal-transfer{
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.7);
+
+    z-index: 9999;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.modal-transfer-content{
+
+    background: #fff;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.close-transfer{
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.dato{
+
+    margin: 20px 0;
+}
+
+.dato p{
+
+    margin: 10px 0;
+}
+
+.dato button{
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #6d1f2f;
+
+    color: white;
+
+    cursor: pointer;
+}
