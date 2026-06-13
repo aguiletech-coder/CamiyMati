@@ -232,6 +232,23 @@ window.addEventListener("click", (e) => {
 
 });
 
+function mostrarMensaje(texto){
+
+    const mensaje =
+    document.getElementById("mensajeCopiado");
+
+    mensaje.innerText = texto;
+
+    mensaje.classList.add("show");
+
+    setTimeout(() => {
+
+        mensaje.classList.remove("show");
+
+    }, 2500);
+
+}
+
 document
 .getElementById("copiarAliasBtn")
 .addEventListener("click", () => {
