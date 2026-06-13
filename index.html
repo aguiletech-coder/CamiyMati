@@ -445,13 +445,59 @@
             </div>
 
         </div>
-        <h4>Alias</h4>
-
-        <p>camila.matias.boda</p>
-
-        <button class="copiar-alias">
-            Copiar Alias
+    <button class="copiar-alias" id="openTransferModal">
+          Ver datos para transferencia
         </button>
+        
+    <div id="transferModal" class="modal-transfer">
+
+    <div class="modal-transfer-content">
+
+        <span class="close-transfer">&times;</span>
+
+        <h3>Datos para Transferencia</h3>
+
+        <div class="dato">
+
+            <strong>Titular</strong>
+            <p>Camila Acosta</p>
+
+        </div>
+
+        <div class="dato">
+
+            <strong>Banco</strong>
+            <p>Banco Nación</p>
+
+        </div>
+
+        <div class="dato">
+
+            <strong>Alias</strong>
+            <p id="aliasTexto">camila.matias.boda</p>
+
+            <button id="copiarAliasBtn">
+                Copiar Alias
+            </button>
+
+        </div>
+
+        <div class="dato">
+
+            <strong>CBU</strong>
+            <p id="cbuTexto">
+                0110123400012345678901
+            </p>
+
+            <button id="copiarCbuBtn">
+                Copiar CBU
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
     </div>
 
