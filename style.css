@@ -1513,3 +1513,38 @@ h1{
     cursor: pointer;
 }
 
+.mensaje-copiado{
+
+    position: fixed;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #6d1f2f;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-size: .95rem;
+
+    z-index: 10000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s ease;
+}
+
+.mensaje-copiado.show{
+
+    opacity: 1;
+
+    visibility: visible;
+}
